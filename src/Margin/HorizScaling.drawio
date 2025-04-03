@@ -1,0 +1,131 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="Page-1" id="kBa7VpUJKZxuJ0MiF5iB">
+    <mxGraphModel dx="1863" dy="666" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zDU88926WMc-7mVtVix4-27" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-1" target="zDU88926WMc-7mVtVix4-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-28" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-1" target="zDU88926WMc-7mVtVix4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-1" target="zDU88926WMc-7mVtVix4-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-30" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-1" target="zDU88926WMc-7mVtVix4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-1" value="Matching&lt;div&gt;Engine&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#004cff;strokeWidth=2;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-2" target="zDU88926WMc-7mVtVix4-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-36" value="&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#0000ff&quot;&gt;Execute Intent (Receive)&lt;/font&gt;&lt;/b&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zDU88926WMc-7mVtVix4-23">
+          <mxGeometry x="0.16" relative="1" as="geometry">
+            <mxPoint x="-39" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-24" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-2" target="zDU88926WMc-7mVtVix4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-25" value="&lt;font color=&quot;#d12a2a&quot;&gt;&lt;b&gt;Execute Intent (Deliver)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#D12A2A;strokeWidth=2;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-2" target="zDU88926WMc-7mVtVix4-7">
+          <mxGeometry x="-0.2" y="13" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-2" target="zDU88926WMc-7mVtVix4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-2" value="Matching&lt;div&gt;Engine&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-3" target="zDU88926WMc-7mVtVix4-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-3" target="zDU88926WMc-7mVtVix4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-3" target="zDU88926WMc-7mVtVix4-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-3" target="zDU88926WMc-7mVtVix4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-3" value="Matching&lt;div&gt;Engine&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-4" target="zDU88926WMc-7mVtVix4-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-4" target="zDU88926WMc-7mVtVix4-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-4" target="zDU88926WMc-7mVtVix4-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#CCCCCC;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-4" target="zDU88926WMc-7mVtVix4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-4" value="Matching&lt;div&gt;Engine&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#0000FF;dashed=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-5" target="zDU88926WMc-7mVtVix4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-38" value="&lt;font color=&quot;#0000ff&quot;&gt;&lt;b&gt;Ok(Execute Intent)&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=default;" vertex="1" connectable="0" parent="zDU88926WMc-7mVtVix4-37">
+          <mxGeometry x="0.2557" y="1" relative="1" as="geometry">
+            <mxPoint x="19" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-5" value="Margin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#1814ff;" vertex="1" parent="1">
+          <mxGeometry x="560" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-6" value="Margin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="560" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-39" value="&lt;font color=&quot;#d12a2a&quot;&gt;&lt;b&gt;Ok(Execute Intent)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;strokeColor=#D12A2A;strokeWidth=2;dashed=1;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-7" target="zDU88926WMc-7mVtVix4-2">
+          <mxGeometry x="0.0889" y="9" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-7" value="Margin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="560" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-8" value="Margin" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="560" y="520" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-12" value="Partitioning&lt;div&gt;by Market&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=120;height=50;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="280" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-13" value="Partitioning&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;by&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Participant&lt;/span&gt;&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=120;height=50;dashed=1;dashPattern=8 8;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="280" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-31" target="zDU88926WMc-7mVtVix4-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-33" value="Order Entry" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zDU88926WMc-7mVtVix4-32">
+          <mxGeometry x="-0.411" y="2" relative="1" as="geometry">
+            <mxPoint x="24" y="-25" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-31" value="Backend&lt;div&gt;System&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="160" width="120" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-34" target="zDU88926WMc-7mVtVix4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-34" value="Participant 1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="250" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-41" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="zDU88926WMc-7mVtVix4-40" target="zDU88926WMc-7mVtVix4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zDU88926WMc-7mVtVix4-40" value="Participant 2" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="440" width="30" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
