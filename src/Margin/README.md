@@ -173,8 +173,8 @@ Available\ Margin = U - R - Liabilities
 The $Liabilities$ are the loans, e.g. when utilized margin.
 
 #### Example
-Say you have 10000 USDT and you buy BTC worth of 50000 USDT, and that is possible when $r_{BTC} = 20%.
-Then you need to borrow 40000 USDT in order to complete transaction, and then:
+Say you have 10000 USDT and you buy BTC worth of 50000 USDT, and that is possible when $r_{BTC} = 0.2$.
+Then you need to borrow 40000 USDT in order to complete transaction, so:
 
 ```math
 \begin{matrix}
