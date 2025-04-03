@@ -164,9 +164,9 @@ Equity = Assets - Liabilities
 so:
 
 ```math
-Available\ Margin = U - R - Liabilities
+Available\ Margin = I - R - Liabilities
 
-; \quad U \text{ is } Assets
+; \quad I \text{ is } Assets
 , \quad R \text{ is } Margin\ Requirement \text{.}
 ```
 
@@ -178,7 +178,7 @@ Then you need to borrow 40000 USDC in order to complete transaction, so initiall
 
 ```math
 \begin{matrix}
-U = 10000 \\
+I = 10000 \\
 R = 10000 \times 0.0 = 0 \\
 Liabilities = 0 \\
 Equity = 10000 \\
@@ -190,36 +190,36 @@ and then, after BTC order is filled we get:
 
 ```math
 \begin{matrix}
-U = 50000 \\
+I = 50000 \\
 R = 50000 \times 0.2 = 10000 \\
 Liabilities = Borrowings = Assets - Own\ Capital = 50000 - 10000 = 40000 \\
-Equity = U - Liabilities = 10000 \\
+Equity = I - Liabilities = 10000 \\
 Available\ Margin = Equity - R = 10000 - 10000 = 0
 \end{matrix}
 ```
 
-then, if the price of BTC goes up, the portfolio value $U$ goes up, say to $55000$, and we'll get:
+then, if the price of BTC goes up, the portfolio value $I$ goes up, say to $55000$, and we'll get:
 
 ```math
 \begin{matrix}
-U = 55000 \\
+I = 55000 \\
 R = 55000 \times 0.2 = 11000 \\
 Liabilities = 40000 \\
-Equity = U - Liabilities = 15000 \\
+Equity = I - Liabilities = 15000 \\
 Available\ Margin = Equity - R = 15000 - 10000 = 5000
 \end{matrix}
 ```
 
 which means that you can now borrow more, since you have $Available\ Margin = 5000$.
 
-On the other hand, if the price of BTC drops, and the portfolio value $U$ goes down, say to $45000$, then we'll get:
+On the other hand, if the price of BTC drops, and the portfolio value $I$ goes down, say to $45000$, then we'll get:
 
 ```math
 \begin{matrix}
-U = 45000 \\
+I = 45000 \\
 R = 45000 \times 0.2 = 9000 \\
 Liabilities = 40000 \\
-Equity = U - Liabilities = 5000 \\
+Equity = I - Liabilities = 5000 \\
 Available\ Margin = Equity - R = 5000 - 9000 = -4000
 \end{matrix}
 ```
