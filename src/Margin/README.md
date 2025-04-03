@@ -86,18 +86,23 @@ R = \sum_{i=1}^{M} R_i
 Assuming we have margin rate $r_i$ assigned to each asset we can calculate margin requirement $R_i$:
 
 ```math
-R_i = | F_i | \times r_i
+R_i = | F_i + I_i | \times r_i
+
+; \quad I_i \text{ is value of the asset in portfolio.}
 ```
 
 and then:
 
 ```math
-R_i  = P_i \times \bigg| Q_1 \times f_1 + Q_2 \times f_2 + \dots + Q_N \times f_N \bigg| \times r_i
+R_i  = P_i \times \bigg| Q_1 \times f_1 + Q_2 \times f_2 + \dots + Q_N \times f_N + U_i \bigg| \times r_i
+
+; \quad U_i \text{ is quantity of the asset in portfolio.}
 ```
 
 #### Example
-1. Buy 10 ETH @ Limit 1 BTC Fee 0.1 BNB filled at 50%
-2. Sell 5 ETH @ Limit 10000 USDT Fee 0.05 BNB filled at 75%
+1. Empty Investment Portfolio
+2. Buy 10 ETH @ Limit 1 BTC Fee 0.1 BNB filled at 50%
+3. Sell 5 ETH @ Limit 10000 USDT Fee 0.05 BNB filled at 75%
 
 ```math
 F = \begin{pmatrix}
@@ -136,4 +141,3 @@ R = P_{BTC} \times \bigg| -1 \times 0.5 \bigg| \times r_{BTC} +
     P_{BNB} \times \bigg| 0.1 \times 0.5 + 0.05 \times 0.75 \bigg| \times r_{BNB}
 \end{matrix}
 ```
-
