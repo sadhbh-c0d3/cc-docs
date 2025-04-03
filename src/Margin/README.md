@@ -99,6 +99,11 @@ R_i  = P_i \times \bigg| Q_1 \times f_1 + Q_2 \times f_2 + \dots + Q_N \times f_
 ; \quad U_i \text{ is quantity of the asset in portfolio.}
 ```
 
+**Note** The $R_i$ depends on the fill-rate for each of the orders.
+The $R(f)$ is a function of the fill-rate, and if we include open orders, then 
+we can minimise or maximise the function $R(f)$ to find minimum or maximum margin requirement, which
+then can be subtracted from equity to provide available margin.
+
 #### Example
 1. Empty Investment Portfolio
 2. Buy 10 ETH @ Limit 1 BTC Fee 0.1 BNB filled at 50%
