@@ -13,7 +13,7 @@ Portfolio consists of many assets in varying quantities:
 ```math
 V(A_i) = P(A_i) \times Q(A_i)
 
-; \quad i \in [0,N] \text{ and } N \text{ is a number of assets in portfolio.} 
+; \quad i \in \langle 0, N \rangle \text{ and } N \text{ is a number of assets in portfolio.} 
 ```
 
 Order on market with traded pair consists of three assets:
@@ -25,7 +25,7 @@ Order on market with traded pair consists of three assets:
 ```math
 V(A_i) = P(A_i) \times Q(A_i)
 
-; \quad i \in [0,3]
+; \quad i \in \langle 0, 3 \rangle
 ```
 
 ### Order Matrix
@@ -39,7 +39,8 @@ P_3 \times Q_3
 \end{pmatrix} \times f
 ```
 
-Example: Buy 10 ETH @ Limit 1 BTC Fee 0.1 BNB filled at 50%:
+#### Example
+Buy 10 ETH @ Limit 1 BTC Fee 0.1 BNB filled at 50%:
 
 ```math
 F = \begin{pmatrix}
@@ -76,19 +77,25 @@ F_i  = P_i \times ( Q_1 \times f_1 + Q_2 \times f_2 + \dots + Q_N \times f_N )
 ```
 
 ### Margin Requirement
-Assuming we have margin rate $r_j$ assigned to each asset we can calculate margin requirement $R_j$:
+Margin requirement $R$ is calculated across all assets by summing up margin requirements for each asset $R_j$:
 
 ```math
-R_j = | F_j | \times r_j
+R = \sum_{i=1}^{M} R_i
+```
+
+Assuming we have margin rate $r_i$ assigned to each asset we can calculate margin requirement $R_i$:
+
+```math
+R_i = | F_i | \times r_i
 ```
 
 and then:
 
 ```math
-R_i  = P_i \times \bigg| Q_1 \times f_1 + Q_2 \times f_2 + \dots + Q_N \times f_N \bigg| \times r_j
+R_i  = P_i \times \bigg| Q_1 \times f_1 + Q_2 \times f_2 + \dots + Q_N \times f_N \bigg| \times r_i
 ```
 
-Example:
+#### Example
 1. Buy 10 ETH @ Limit 1 BTC Fee 0.1 BNB filled at 50%
 2. Sell 5 ETH @ Limit 10000 USDT Fee 0.05 BNB filled at 75%
 
@@ -112,6 +119,21 @@ R_{BTC} = P_{BTC} \times \bigg| -1 \times 0.5 \bigg| \times r_{BTC} \\
 R_{ETH} = P_{ETH} \times \bigg| 10 \times 0.5 - 5 \times 0.75 \bigg| \times r_{ETH} \\
 R_{USDT} = P_{USDT} \times \bigg| 10000 \times 0.75 \bigg| \times r_{USDT} \\
 R_{BNB} = P_{BNB} \times \bigg| 0.1 \times 0.5 + 0.05 \times 0.75 \bigg| \times r_{BNB}
+\end{matrix}
+```
+
+and so:
+
+```math
+R = R_{BTC} + R_{ETH} + R_{USDT} + R_{BNB}
+```
+
+```math
+\begin{matrix}
+R = P_{BTC} \times \bigg| -1 \times 0.5 \bigg| \times r_{BTC} +
+    P_{ETH} \times \bigg| 10 \times 0.5 - 5 \times 0.75 \bigg| \times r_{ETH} + \\
+    P_{USDT} \times \bigg| 10000 \times 0.75 \bigg| \times r_{USDT} +
+    P_{BNB} \times \bigg| 0.1 \times 0.5 + 0.05 \times 0.75 \bigg| \times r_{BNB}
 \end{matrix}
 ```
 
