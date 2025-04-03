@@ -107,13 +107,13 @@ then can be subtracted from equity to provide available margin.
 #### Example
 1. 1 BTC in Portfolio
 2. Buy 10 ETH @ Limit 1 BTC Fee 0.1 BNB filled at 50%
-3. Sell 5 ETH @ Limit 10000 USDT Fee 0.05 BNB filled at 75%
+3. Sell 5 ETH @ Limit 10000 USDC Fee 0.05 BNB filled at 75%
 
 ```math
 F = \begin{pmatrix}
 P_{BTC} \times -1 & P_{BTC} \times 0 \\
 P_{ETH} \times 10 & P_{ETH} \times -5 \\
-P_{USDT} \times 0 & P_{USDT} \times 10000 \\
+P_{USDC} \times 0 & P_{USDC} \times 10000 \\
 P_{BNB} \times 0.1 & P_{BNB} \times 0.05
 \end{pmatrix} \times \begin{pmatrix}
 0.5 \\
@@ -127,7 +127,7 @@ and then:
 \begin{matrix}
 R_{BTC} = P_{BTC} \times \bigg| -1 \times 0.5 + 1 \bigg| \times r_{BTC} \\
 R_{ETH} = P_{ETH} \times \bigg| 10 \times 0.5 - 5 \times 0.75 \bigg| \times r_{ETH} \\
-R_{USDT} = P_{USDT} \times \bigg| 10000 \times 0.75 \bigg| \times r_{USDT} \\
+R_{USDC} = P_{USDC} \times \bigg| 10000 \times 0.75 \bigg| \times r_{USDC} \\
 R_{BNB} = P_{BNB} \times \bigg| 0.1 \times 0.5 + 0.05 \times 0.75 \bigg| \times r_{BNB}
 \end{matrix}
 ```
@@ -135,14 +135,14 @@ R_{BNB} = P_{BNB} \times \bigg| 0.1 \times 0.5 + 0.05 \times 0.75 \bigg| \times 
 and so:
 
 ```math
-R = R_{BTC} + R_{ETH} + R_{USDT} + R_{BNB}
+R = R_{BTC} + R_{ETH} + R_{USDC} + R_{BNB}
 ```
 
 ```math
 \begin{matrix}
 R = P_{BTC} \times \bigg| -1 \times 0.5 + 1 \bigg| \times r_{BTC} +
     P_{ETH} \times \bigg| 10 \times 0.5 - 5 \times 0.75 \bigg| \times r_{ETH} + \\
-    P_{USDT} \times \bigg| 10000 \times 0.75 \bigg| \times r_{USDT} +
+    P_{USDC} \times \bigg| 10000 \times 0.75 \bigg| \times r_{USDC} +
     P_{BNB} \times \bigg| 0.1 \times 0.5 + 0.05 \times 0.75 \bigg| \times r_{BNB}
 \end{matrix}
 ```
@@ -173,8 +173,20 @@ Available\ Margin = U - R - Liabilities
 The $Liabilities$ are the loans, e.g. when utilized margin.
 
 #### Example
-Say you have 10000 USDT and you buy BTC worth of 50000 USDT, and that is possible when $r_{BTC} = 0.2$.
-Then you need to borrow 40000 USDT in order to complete transaction, so:
+Say you have 10000 USDC and you buy BTC worth of 50000 USDC, and that is possible when $r_{BTC} = 0.2$.
+Then you need to borrow 40000 USDC in order to complete transaction, so initially we have:
+
+```math
+\begin{matrix}
+U = 10000 \\
+R = 10000 \times 0.0 = 0 \\
+Liabilities = Assets - Capital = 10000 - 10000 = 0 \\
+Equity = 10000 \\
+Available\ Margin = Equity - R = 10000
+\end{matrix}
+```
+
+and then, after BTC order is filled we get:
 
 ```math
 \begin{matrix}
