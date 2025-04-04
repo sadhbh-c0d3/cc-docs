@@ -77,7 +77,7 @@ F_i  = P_i \times ( Q_1 \times f_1 + Q_2 \times f_2 + \dots + Q_N \times f_N )
 ```
 
 ### Margin Requirement
-Margin requirement $R$ is calculated across all assets by summing up margin requirements for each asset $R_i$:
+Margin requirement $R$ is calculated across all assets by summing up margin requirements $R_i$ for each asset:
 
 ```math
 R = \sum_{i=1}^{M} R_i
